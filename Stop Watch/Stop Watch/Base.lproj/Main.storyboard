@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stop Watch View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StopWatchViewController" customModule="Stop_Watch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0:00:00:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G58-r2-seA">
+                                <rect key="frame" x="42" y="359" width="290" height="76.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wol-yI-Iid">
+                                <rect key="frame" x="42" y="595" width="53" height="53"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" backgroundImage="Ellipse 1"/>
+                                <connections>
+                                    <action selector="pauseDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogO-hT-kZk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team OguzhanJanberk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBU-Rc-XoI">
+                                <rect key="frame" x="119" y="828" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kdf-Jb-qap">
+                                <rect key="frame" x="279" y="595" width="54" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="Ellipse 1">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swU-t2-Oiv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyF-rc-VzR">
+                                <rect key="frame" x="134" y="569" width="107" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="WVL-kf-JOB"/>
+                                    <constraint firstAttribute="height" constant="105" id="oYx-mj-WIm"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="Polygon 1" backgroundImage="Ellipse 1"/>
+                                <connections>
+                                    <action selector="startDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cK-tm-GqE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVc-8j-TKz">
+                                <rect key="frame" x="138" y="74" width="99" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="oyr-Kh-2gi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.36078431372549019" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyF-rc-VzR" secondAttribute="bottom" constant="104" id="20e-3G-hod"/>
+                            <constraint firstItem="G58-r2-seA" firstAttribute="trailing" secondItem="Kdf-Jb-qap" secondAttribute="trailing" id="Bnq-s7-2eN"/>
+                            <constraint firstItem="G58-r2-seA" firstAttribute="leading" secondItem="wol-yI-Iid" secondAttribute="leading" id="FRW-Rw-WiB"/>
+                            <constraint firstItem="sVc-8j-TKz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Hov-Ca-WjW"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="centerX" secondItem="G58-r2-seA" secondAttribute="centerX" id="MQY-s8-q0S"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="centerX" secondItem="sVc-8j-TKz" secondAttribute="centerX" id="e0A-6x-rAw"/>
+                            <constraint firstItem="sVc-8j-TKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="m31-9b-Cvi"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="centerY" secondItem="wol-yI-Iid" secondAttribute="centerY" id="nVK-5r-14F"/>
+                            <constraint firstItem="G58-r2-seA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="359" id="nw2-6g-bel"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="centerY" secondItem="Kdf-Jb-qap" secondAttribute="centerY" id="o8P-O4-dGW"/>
+                            <constraint firstItem="Kdf-Jb-qap" firstAttribute="leading" secondItem="vyF-rc-VzR" secondAttribute="trailing" constant="38" id="ofN-ed-kWF"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s99-sD-E3J"/>
+                            <constraint firstItem="vyF-rc-VzR" firstAttribute="leading" secondItem="wol-yI-Iid" secondAttribute="trailing" constant="39" id="sbx-0X-yee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TMv-5c-9k3" appends="YES" id="do2-Th-tov"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="wol-yI-Iid" id="427-XY-5V0"/>
+                        <outlet property="resetButton" destination="Kdf-Jb-qap" id="AlU-bW-iKA"/>
+                        <outlet property="startButton" destination="vyF-rc-VzR" id="YkI-c6-B1h"/>
+                        <outlet property="timerLabel" destination="G58-r2-seA" id="qpp-C0-kJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="TMv-5c-9k3"/>
+            </objects>
+            <point key="canvasLocation" x="18.399999999999999" y="89.408866995073893"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ellipse 1" width="53" height="53"/>
+        <image name="Polygon 1" width="35.333332061767578" height="40.333332061767578"/>
+    </resources>
+</document>
